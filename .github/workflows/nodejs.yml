@@ -28,9 +28,9 @@ jobs:
         ./set_github_ssh_key.sh
         git config user.name "ykhirao-bot"
         git config user.email "yuki.dees39th@gmail.com"
-        git remote rm origin
+        # git remote rm origin
         # git remote add origin https://ykhirao:${{ secrets.GITHUB_PASS }}@github.com/ykhirao/write-code-everyday-bot
-        git remote add master git@github.com:ykhirao/write-code-everyday-bot.git
+        # git remote add master git@github.com:ykhirao/write-code-everyday-bot.git
         git fetch
         git branch
         git checkout master
