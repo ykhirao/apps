@@ -16,10 +16,10 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 # .ssh/config の作成
 cp -f ./config ~/.ssh/config
 
-# .ssh/id_rsa の作成
-echo ${SSH_KEY} > ~/.ssh/id_rsa
-sed -i -e "s#\\\\n#\n#g" ~/.ssh/id_rsa
+# .ssh/github_actions の作成
+echo ${SSH_KEY} > ~/.ssh/github_actions
+sed -i -e "s#\\\\n#\n#g" ~/.ssh/github_actions
 
-# .ssh/id_rsa のアクセス制限
-chmod 600 ~/.ssh/id_rsa
+# .ssh/github_actions のアクセス制限
+chmod 600 ~/.ssh/github_actions
 chmod 600 ~/.ssh/config
