@@ -1,0 +1,22 @@
+{
+  "name": "write-code-everyday-bot",
+  "version": "1.0.0",
+  "description": "Write code every day by bot",
+  "main": "index.js",
+  "scripts": {
+    "add:text": "npm substack >> README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykhirao/write-code-everyday-bot.git"
+  },
+  "author": "ykhirao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ykhirao/write-code-everyday-bot/issues"
+  },
+  "homepage": "https://github.com/ykhirao/write-code-everyday-bot#readme",
+  "dependencies": {
+    "simple-git": "^1.126.0"
+  }
+}
