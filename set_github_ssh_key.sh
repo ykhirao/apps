@@ -17,7 +17,6 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 cp -f ./config ~/.ssh/config
 
 # .ssh/id_rsa の作成
-echo ${SSH_KEY}
 echo ${SSH_KEY} > ~/.ssh/id_rsa
 sed -i -e "s#\\\\n#\n#g" ~/.ssh/id_rsa
 

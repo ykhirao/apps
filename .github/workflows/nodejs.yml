@@ -32,7 +32,7 @@ jobs:
         # git remote add origin https://ykhirao:${{ secrets.GITHUB_PASS }}@github.com/ykhirao/write-code-everyday-bot
         git remote add master git@github.com:ykhirao/write-code-everyday-bot.git
         git fetch
-        git checkout origin/master
+        git checkout master
         npm run add:text
         git add .
         git commit -m "update!"
