@@ -30,7 +30,7 @@ jobs:
         git config user.email "yuki.dees39th@gmail.com"
         git remote rm origin
         # git remote add origin https://ykhirao:${{ secrets.GITHUB_PASS }}@github.com/ykhirao/write-code-everyday-bot
-        git remote add origin git@github.com:ykhirao/write-code-everyday-bot.git
+        git remote add master git@github.com:ykhirao/write-code-everyday-bot.git
         git fetch
         git checkout origin/master
         npm run add:text
