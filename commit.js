@@ -1,0 +1,5 @@
+require('simple-git')()
+  .addConfig('user.name', 'ykhirao-bot')
+  .addConfig('user.email', 'yuki.dees39th@gmail.com ')
+  .add('./*')
+  .commit("update")
