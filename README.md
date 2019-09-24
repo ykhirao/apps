@@ -12,3 +12,4 @@ MODULE ALL THE THINGS!
 Replace your configs with services
 c/,,\
 but first, burritos
+\o/
