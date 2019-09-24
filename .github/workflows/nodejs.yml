@@ -31,7 +31,6 @@ jobs:
         # git remote rm origin
         # git remote add origin https://ykhirao:${{ secrets.GITHUB_PASS }}@github.com/ykhirao/write-code-everyday-bot
         git remote set-url origin git@github.com:ykhirao/write-code-everyday-bot.git
-        # git remote set-url origin git@github.com:username/repo.git
         git fetch
         git branch
         git checkout master
