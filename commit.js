@@ -1,5 +1,5 @@
 require('simple-git')()
+  .addConfig('user.name', 'ykhirao-bot')
+  .addConfig('user.email', 'yuki.dees39th@gmail.com ')
   .add('./*')
-  .commit("first commit!")
-  .addRemote('origin', 'https://github.com/ykhirao/write-code-everyday-bot/')
-  .push(['-u', 'origin', 'master'], () => console.log('done'));
+  .commit("update")

@@ -1,0 +1,4 @@
+Host GitHub
+    HostName github.com
+    IdentityFile ~/.ssh/github_actions
+    User ykhirao

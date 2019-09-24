@@ -4,7 +4,9 @@
   "description": "Write code every day by bot",
   "main": "index.js",
   "scripts": {
-    "add:text": "npm substack >> README.md"
+    "add:text": "npm substack >> README.md",
+    "commit": "node commit.js",
+    "git": "git add . && git commit -m 'update' && git push"
   },
   "repository": {
     "type": "git",
