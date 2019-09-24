@@ -18,9 +18,9 @@ cp -f ./config ~/.ssh/config
 
 # .ssh/id_rsa の作成
 echo ${SSH_KEY}
-echo ${SSH_KEY} > ~/.ssh/github_actions
-sed -i -e "s#\\\\n#\n#g" ~/.ssh/github_actions
+echo ${SSH_KEY} > ~/.ssh/id_rsa
+sed -i -e "s#\\\\n#\n#g" ~/.ssh/id_rsa
 
 # .ssh/id_rsa のアクセス制限
-chmod 600 ~/.ssh/github_actions
+chmod 600 ~/.ssh/id_rsa
 chmod 600 ~/.ssh/config

@@ -1,4 +1,4 @@
 Host GitHub
     HostName github.com
-    IdentityFile ~/.ssh/github_actions
+    IdentityFile ~/.ssh/id_rsa
     User git
