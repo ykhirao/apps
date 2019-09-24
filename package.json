@@ -18,7 +18,5 @@
     "url": "https://github.com/ykhirao/write-code-everyday-bot/issues"
   },
   "homepage": "https://github.com/ykhirao/write-code-everyday-bot#readme",
-  "dependencies": {
-    "simple-git": "^1.126.0"
-  }
+  "dependencies": {}
 }

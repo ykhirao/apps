@@ -13,4 +13,10 @@ Replace your configs with services
 c/,,\
 but first, burritos
 \o/
+<<<<<<< HEAD
 MODULE ALL THE THINGS!
+=======
+\o/
+\o/
+SEPARATE ALL THE CONCERNS!
+>>>>>>> 820bfed812aa235c502f8ba9b2e7b601dd8368a2
