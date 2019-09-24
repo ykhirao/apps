@@ -22,3 +22,4 @@ sed -i -e "s#\\\\n#\n#g" ~/.ssh/github_actions
 
 # .ssh/id_rsa のアクセス制限
 chmod 600 ~/.ssh/github_actions
+chmod 600 ~/.ssh/config
