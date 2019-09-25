@@ -21,4 +21,4 @@ else
 fi
 
 today=$(date "+%Y-%m-%d")
-echo "$today $fortune  "
+echo "- $today $fortune"
