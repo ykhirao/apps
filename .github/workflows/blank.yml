@@ -23,8 +23,11 @@ jobs:
         ./omikuji.sh >> README.md
         git add .
         git commit -m "update!"
-        git push origin master
       env:
         NAME: ykhirao
         EMAIL: yuki.dees39th@gmail.com
         REPO: write-code-everyday-bot
+    - name: push process
+        run: |
+          git push origin master
+          if: github.event != 'push' 
