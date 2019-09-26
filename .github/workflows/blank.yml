@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push: # 一度動作確認してActionsが動きそうならオフにする # オフにしないとpushの無限ループにおちいるよ。
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        git config user.name {owner}
+        git config user.email "yuki.dees39th@gmail.com" # ここは自分のメールアドレスに変更して
+        git remote set-url origin https://{owner}:${{ secrets.GITHUB_PASS }}@github.com/{owner}/{repo}
+        git branch
+        git checkout master
+        git branch
+        ./omikuji.sh >> README.md
+        git add .
+        git commit -m "update!"
+        git push origin master
