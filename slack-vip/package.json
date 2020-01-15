@@ -1,0 +1,24 @@
+{
+  "name": "slack-vip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykhirao/slack-vip.git"
+  },
+  "author": "Yuki Hirao <yuki.dees39th@gmail.com> (https://github.com/ykhirao)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ykhirao/slack-vip/issues"
+  },
+  "homepage": "https://github.com/ykhirao/slack-vip#readme",
+  "dependencies": {
+    "@slack/bolt": "^1.4.1",
+    "dotenv": "^8.2.0"
+  }
+}
