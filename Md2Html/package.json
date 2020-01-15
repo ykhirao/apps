@@ -1,0 +1,28 @@
+{
+  "name": "md2html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -r dist/ && parcel index.html",
+    "build": "rm -r dist/ && parcel build index.html --no-source-maps --no-cache --public-url https://ykhirao.github.io/Md2Html/",
+    "deploy": "npm run build && gh-pages -d dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykhirao/Md2Html.git"
+  },
+  "author": "Yuki Hirao <yuki.dees39th@gmail.com> (https://github.com/ykhirao)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ykhirao/Md2Html/issues"
+  },
+  "homepage": "https://github.com/ykhirao/Md2Html#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.1"
+  },
+  "dependencies": {
+    "markdown-it": "^10.0.0"
+  }
+}

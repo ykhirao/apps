@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <h1 class="navbar-item">
+          Md2Html
+        </h1>
+      </div>
+    </nav> -->
+    <div class="columns" style="margin-top: 0;">
+      <div class="column is-half">
+        <div class="box">
+          <p class="title is-5 has-text-centered">Markdown</p>
+          <div class="box" contenteditable="true" id="MdAreaInput">
+            <div>
+              # markdownのパーサー
+            </div>
+            <div>
+              1. 基本的な記法は使える
+            </div>
+            <div>
+              2. **試してみてね！**</div>
+            <div>&gt; 引用もテーブルも使える！！</div>
+            <div><br></div>
+            <div>良い点|悪い点</div>
+            <div>--|--</div>
+            <div>たくさん|なし</div>
+          </div>
+        </div>
+      </div>
+      <div class=" column is-half">
+        <div class="box">
+          <p class="title is-5 has-text-centered">HTML</p>
+          <div class="box" contenteditable="true" id="HtmlAreaText" style="font-size: 0.7em;">
+            &lt;h1&gt;markdownのパーサー&lt;/h1&gt;<br>&lt;ol&gt;<br>&lt;li&gt;基本的な記法は使える&lt;/li&gt;<br>&lt;li&gt;&lt;strong&gt;試してみてね！&lt;/strong&gt;&lt;/li&gt;<br>&lt;/ol&gt;<br>&lt;blockquote&gt;<br>&lt;p&gt;引用もテーブルも使える！！&lt;/p&gt;<br>&lt;/blockquote&gt;<br>&lt;table&gt;<br>&lt;thead&gt;<br>&lt;tr&gt;<br>&lt;th&gt;良い点&lt;/th&gt;<br>&lt;th&gt;悪い点&lt;/th&gt;<br>&lt;/tr&gt;<br>&lt;/thead&gt;<br>&lt;tbody&gt;<br>&lt;tr&gt;<br>&lt;td&gt;たくさん&lt;/td&gt;<br>&lt;td&gt;なし&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/tbody&gt;<br>&lt;/table&gt;<br>
+          </div>
+
+        </div>
+        <div class="box">
+          <p class="title is-5 has-text-centered">Preview</p>
+          <div class="box" id="HtmlAreaOutput">
+            <h1>markdownのパーサー</h1>
+            <ol>
+              <li>基本的な記法は使える</li>
+              <li><strong>試してみてね！</strong></li>
+            </ol>
+            <blockquote>
+              <p>引用もテーブルも使える！！</p>
+            </blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th>良い点</th>
+                  <th>悪い点</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>たくさん</td>
+                  <td>なし</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
