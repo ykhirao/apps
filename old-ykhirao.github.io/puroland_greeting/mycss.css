@@ -1,0 +1,101 @@
+
+
+h1{
+    margin: 0 0 1.5em;
+    padding: 0.5em;
+    border-left: 10px solid #337AB7;
+    border-bottom: 1px dashed #337AB7;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+.center{
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 20px;
+}
+a{
+	width:94%;
+	text-align: center;
+}
+
+li{
+	display:inline-block;
+	margin-top: -12px;
+	margin-bottom: 2px;
+	display: inline; 
+	padding: 0; 
+	margin: 0; 
+}
+img{
+	width: auto;
+	max-height: 140px;
+}
+
+.btn {
+	font-size: 24px;
+	letter-spacing: 0.15em;
+}
+
+.h1_birth{
+	border-left: 10px solid #F68CA2;
+    border-bottom: 1px dashed #F68CA2;
+}
+
+.birthday_charactor{
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 20px;
+}
+
+.month{
+	color:white;
+	font-size: 24px;
+	letter-spacing: 0.15em;
+	background-color: #F68CA2;
+	padding:10px;
+	border-radius:10px;
+}
+
+body{
+	font-family:'arial unicode ms';
+}
+
+.radius{
+		border-radius:10px;
+}
+
+.a_birth{
+	/*display: table-cell;*/
+}
+ul{
+	list-style:none;
+
+}
+li{
+	float:left;
+	margin:2px;
+}
+
+.container{
+	text-align: center;
+}
+
+.myhr{
+	color: #F68CA2;
+	border-top: 1px solid #F68CA2;
+	padding-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

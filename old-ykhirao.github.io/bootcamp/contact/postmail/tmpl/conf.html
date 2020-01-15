@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link rel="stylesheet" href="postmail.css" type="text/css" media="all" />
+<title>お問い合わせフォーム : 確認画面</title>
+</head>
+<body>
+<blockquote>
+<strong class="ttl">お問い合わせフォーム &gt; 確認画面</strong>
+<ul>
+<li>以下の内容でよろしければ「送信する」ボタンを押して下さい。</li>
+</ul>
+<table class="form">
+
+<!-- cell_begin -->
+<tr>
+  <th>!key!</th>
+  <td>!val!</td>
+</tr>
+<!-- cell_end -->
+
+</table>
+<br />
+<form action="!mail_cgi!" method="post">
+<!-- hidden -->
+<input type="button" value="&lt; 前に戻る" onclick="history.back()" class="button" />
+&nbsp;&nbsp;
+<input type="submit" value="送信する &gt;" class="button" />
+</form>
+</blockquote>
+</body>
+</html>

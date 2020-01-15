@@ -1,0 +1,18 @@
+/*カスタム用 */
+#map_canvas{
+  position: relative;
+  padding: 0 0 56%;
+  height: 0;
+  overflow: hidden;
+}
+#map_canvas iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+.body{background-color: red;}
