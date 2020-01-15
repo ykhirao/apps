@@ -1,0 +1,9 @@
+{
+  "name": "echo-bot", 
+  "version": "0.1.0", 
+  "main": "index.js", 
+  "dependencies": {
+      "@line/bot-sdk": "^5.0.0",
+      "dotenv": "^4.0.0"
+  }
+}
