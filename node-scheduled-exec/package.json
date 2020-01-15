@@ -1,0 +1,19 @@
+{
+  "name": "scheduled-exec",
+  "version": "1.0.0",
+  "description": "sceduled execute codes on heroku",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'npm start is called !!!'"
+  },
+  "author": "Yuki Hirao <yuki.dees39th@gmail.com> (https://github.com/ykhirao)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "node-cron": "^2.0.3",
+    "pg": "^7.12.1",
+    "qs": "^6.8.0",
+    "simple-git": "^1.126.0"
+  }
+}
