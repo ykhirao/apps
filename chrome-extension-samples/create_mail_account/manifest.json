@@ -1,0 +1,54 @@
+{
+    "name": "Create account",
+    "version": "0.1",
+    "manifest_version": 2,
+    
+    "description": "お名前.comのメールアカウントランダム作成",
+
+    "permissions": [
+        "tabs", "http://*/*"
+    ],
+    
+    "browser_action": {
+        "default_icon": "icon19.png",
+        "default_title": "MCreate account"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/?d=*"],
+            "js": ["top_to_next.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/"],
+            "js": ["top_to_next.js"]
+        },
+
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/default.aspx*"],
+            "js": ["random_adress_click.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/default.aspx"],
+            "js": ["random_adress_click.js"]
+        },
+
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/AddEmailInput.aspx*"],
+            "js": ["confirm.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/AddEmailInput.aspx"],
+            "js": ["confirm.js"]
+        },
+
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/AddEmailConfirm.aspx?d=y*"],
+            "js": ["redirect.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailAccount/AddEmailConfirm.aspx"],
+            "js": ["redirect.js"]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Form for Ticket Pia",
+    "version": "0.1",
+    "manifest_version": 2,
+
+    "description": "チケットぴあ個人情報自動入力",
+
+    "permissions": [
+        "tabs", "http://*/*"
+    ],
+
+    "browser_action": {
+        "default_icon": "icon19.png",
+        "default_title": "Form"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://va3.pia.jp/index.jsp*"],
+            "js": ["page1.js"]
+        },
+        {
+            "matches": ["https://va3.pia.jp/mc17hp2/entry_hope_init.jsp"],
+            "js": ["page2.js"]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Redirect mail",
+    "version": "0.1",
+    "manifest_version": 2,
+    
+    "description": "お名前.comのメール転送先を設定する",
+
+    "permissions": [
+        "tabs", "http://*/*"
+    ],
+
+    "content_scripts": [
+        
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/"],
+            "js": ["change_valid.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/?d=*"],
+            "js": ["change_valid.js"]
+        },
+
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/default.aspx?d=*"],
+            "js": ["add_adress.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/default.aspx"],
+            "js": ["add_adress.js"]
+        },
+
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/Input.aspx?d=*"],
+            "js": ["confirm.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/Input.aspx"],
+            "js": ["confirm.js"]
+        },
+        
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/Confirm.aspx?d=*"],
+            "js": ["redirect.js"]
+        },
+        {
+            "matches": ["https://cp.rentalserver.jp/EmailForwarding/Confirm.aspx"],
+            "js": ["redirect.js"]
+        }
+    ]
+}

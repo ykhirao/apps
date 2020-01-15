@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Table To Markdown Creater",
+  "short_name": "TableToMd",
+  "description": "Chrome and Firefox exetension",
+  "browser_action": {
+    "default_icon": {
+      "19": "icon-128.png"
+    },
+    "default_popup": "index.html",
+    "default_title": "TableToMd"
+  },
+  "homepage_url": "https://github.com/ykhirao/TableToMd",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

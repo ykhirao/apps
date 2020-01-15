@@ -1,0 +1,1 @@
+document.getElementById('ctl00_objMasterPlaceHolder_btnAdd').click();

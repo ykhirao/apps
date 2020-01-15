@@ -1,0 +1,28 @@
+{
+    "name": "My Extension",
+    "version": "0.1",
+    "manifest_version": 2,
+    
+    "description": "dom操作用の拡張",
+
+    "permissions": [
+        "tabs", "http://*/*"
+    ],
+    
+    "browser_action": {
+        "default_icon": "icon19.png",
+        "default_title": "My First Extension",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://va.pia.jp/babymetal17pg/entry_hope_init.jsp"],
+            "js": ["checked_true.js"]
+        },
+        {
+            "matches": ["https://va.pia.jp/babymetal17pg/login.jsp*"],
+            "js": ["id_pass.js"]
+        }
+    ]
+}

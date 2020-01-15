@@ -1,0 +1,33 @@
+{
+    "name": "e_syugyo",
+    "version": "0.1",
+    "manifest_version": 2,
+    
+    "description": "e-就業の入力の補助",
+
+    "permissions": [
+        "tabs", "http://*/*",
+        "tabs", "https://*/*"
+    ],
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "e_syugyo",
+        "default_popup": "./view/main.html"
+    },
+
+    "content_scripts": [{
+        "matches": ["https://e.nds-tyo.co.jp/*"],
+        "js": [
+            "js/lib/jquery.js", 
+            "js/e_syugyo.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true,
+        "match_about_blank": true
+    }],
+
+    "icons" : {
+        "128": "icon.png"
+    }
+}
