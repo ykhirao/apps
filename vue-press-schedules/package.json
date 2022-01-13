@@ -1,0 +1,18 @@
+{
+  "name": "my-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "author": "Yuki Hirao <yuki.dees39th@gmail.com> (https://github.com/ykhirao)",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}

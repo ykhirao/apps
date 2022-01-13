@@ -1,0 +1,14 @@
+### 変数とか
+
+@url = https://www.googleapis.com
+@key = 
+@&region = &regionCode=jp
+
+###
+
+GET {{url}}/youtube/v3/videoCategories?part=id,snippet&regionCode=us&key={{key}}
+
+### 人気ビデオ
+{{url}}/youtube/v3/videos?part=id,snippet&key={{key}}&chart=mostPopular{{&region}}
+
+

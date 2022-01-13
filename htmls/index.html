@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.css"
+    />
+    <style>
+      body {
+        font-size: 3em;
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #uploader {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50%;
+        margin-bottom: 10px;
+      }
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div v-cloak>{{msg}}</div>
+      <div>test</div>
+      <div>test</div>
+      <button @click="sayHello">Hi!</button>
+      <input
+        type="file"
+        id="file"
+        multiple
+        accept="image/*"
+        onchange="handleFiles(this.files)"
+      />
+    </div>
+    <script
+      sync
+      src="https://cdn.jsdelivr.net/gh/fengyuanchen/compressorjs/dist/compressor.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script>
+      document.getElementById("file").addEventListener("change", e => {
+        console.log("change");
+        const file = e.target.files[0];
+        if (!file) {
+          return;
+        }
+        const payload = {
+          quality: 0.8,
+          maxWidth: 800,
+          maxHeight: 800,
+          mimeType: "image/jpeg",
+          success(result) {
+            console.log("success");
+          },
+          error(err) {
+            console.log(err.message);
+          }
+        };
+        const img = new Compressor(file, payload);
+        console.log(img);
+      });
+    </script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          msg: "Welcome"
+        },
+        methods: {
+          sayHello() {
+            this.msg = "Hello!";
+          }
+        },
+        mounted() {
+          //表示後にやりたいことはここに書ける
+        }
+      });
+    </script>
+  </body>
+</html>

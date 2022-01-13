@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos/edit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="columns is-centered is-mobile">
+      <div class="is-5 column">
+        <section class="section">
+          <h2 class="title">
+            My Todo list
+          </h2>
+          <span>
+            編集前: <%= row.text %>
+             <%= row.created_at %>
+          </span>
+          <form action="/todo/<%= row.id %>/edit" method="post">
+            <input
+              class="input"
+              type="text"
+              name="todo"
+              placeholder="Text input"
+              value="<%= row.text %>"
+            >
+            <input type="hidden" name="_method" value="PUT">
+          </form>
+          <h3>
+            <a href="/">リストに戻る</a>
+          </h3>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
